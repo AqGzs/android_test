@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@android:dimen/app_icon_size"
+            android:textColor="@color/teal_700"
+            android:textSize="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/lo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lo1"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:hint="UsesName"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/lo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lo2"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/lo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lo3"
+            android:layout_centerHorizontal="true"
+            android:text="GO"
+            android:background="@android:color/secondary_text_light"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/lo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lo4"
+            android:background="@android:color/primary_text_light"
+            android:text="Forgot your password?"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
